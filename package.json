@@ -1,5 +1,5 @@
 {
-  "name": "@rui/mor-color",
+  "name": "mor-color",
   "version": "1.0.0",
   "description": "Mor-ui 颜色包",
   "main": "index.ts",
