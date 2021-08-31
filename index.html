@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color</title>
+    <link rel="stylesheet" href="./theme/theme.css">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            border: 0;
+        }
+        body {
+            padding: 10px;
+        }
+        .header {
+            margin-bottom: 10px;
+        }
+        .line {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+        }
+        .color-content {
+            width: 250px;
+            height: 100px;
+            padding: 10px;
+            margin: 10px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: space-around;
+            border-radius: var(--theme-border-radius);
+            font-size: var(--theme-font-size);
+            box-shadow: var(--theme-shadow);
+        }
+        .primary {
+            background-color: var(--theme-color-primary);
+            color: var(--theme-text-white);
+        }
+        .success {
+            background-color: var(--theme-color-success);
+            color: var(--theme-text-white);
+        }
+        .warning {
+            background-color: var(--theme-color-warning);
+            color: var(--theme-text-white);
+        }
+        .danger {
+            background-color: var(--theme-color-danger);
+            color: var(--theme-text-white);
+        }
+        .link {
+            background-color: var(--theme-color-link);
+            color: var(--theme-text-white);
+        }
+        .white {
+            background-color: var(--theme-color-white);
+            color: var(--theme-text-black);
+        }
+        .secondary {
+            background-color: var(--theme-color-secondary);
+            color: var(--theme-text-black);
+        }
+        .black {
+            background-color: var(--theme-color-black);
+            color: var(--theme-text-white);
+        }
+        .text-white {
+            background-color: var(--theme-text-white);
+            color: var(--theme-text-black);
+        }
+        .text-color {
+            background-color: var(--theme-text-color);
+            color: var(--theme-text-white);
+        }
+        .text-primary {
+            background-color: var(--theme-text-primary);
+            color: var(--theme-text-white);
+        }
+        .text-secondary {
+            background-color: var(--theme-text-secondary);
+            color: var(--theme-text-white);
+        }
+        .text-disabled {
+            background-color: var(--theme-text-disabled);
+            color: var(--theme-text-white);
+        }
+
+
+        .bg-block {
+            background-color: var(--theme-bg-block);
+            color: var(--theme-text-black);
+        }
+        .bg-block-dark {
+            background-color: var(--theme-bg-block-dark);
+            color: var(--theme-text-black);
+        }
+        .bg-white {
+            background-color: var(--theme-bg-white);
+            color: var(--theme-text-black);
+        }
+        .bg-black {
+            background-color: var(--theme-bg-black);
+            color: var(--theme-text-white);
+        }
+
+        .bg-primary {
+            background-color: var(--theme-bg-primary);
+            color: var(--theme-text-black);
+        }
+        .bg-success {
+            background-color: var(--theme-bg-success);
+            color: var(--theme-text-black);
+        }
+        .bg-warning {
+            background-color: var(--theme-bg-warning);
+            color: var(--theme-text-black);
+        }
+        .bg-danger {
+            background-color: var(--theme-bg-danger);
+            color: var(--theme-text-black);
+        }
+        .bg-link {
+            background-color: var(--theme-bg-link);
+            color: var(--theme-text-black);
+        }
+        .bg-text {
+            background-color: var(--theme-bg-text);
+            color: var(--theme-text-black);
+        }
+        .bg-secondary {
+            background-color: var(--theme-bg-secondary);
+            color: var(--theme-text-black);
+        }
+        .bg-disabled {
+            background-color: var(--theme-bg-disabled);
+            color: var(--theme-text-black);
+        }
+    </style>
+</head>
+<body mor-theme='light'>
+    <h3 class="header">主题色</h3>
+    <div class="line">
+        <div class="color-content primary">
+            <p>Primary</p>
+            <p>@primary</p>
+            <p>主题色</p>
+        </div>
+        <div class="color-content success">
+            <p>Success</p>
+            <p>@success</p>
+            <p>成功</p>
+        </div>
+        <div class="color-content warning">
+            <p>Warning</p>
+            <p>@warning</p>
+            <p>警惕色</p>
+        </div>
+        <div class="color-content danger">
+            <p>Danger</p>
+            <p>@danger</p>
+            <p>危险色</p>
+        </div>
+        <div class="color-content link">
+            <p>Link</p>
+            <p>@link</p>
+            <p>链接色</p>
+        </div>
+    </div>
+    <h3 class="header">主要色</h3>
+    <div class="line">
+        <div class="color-content white">
+            <p>White</p>
+            <p>@white</p>
+            <p>白色</p>
+        </div>
+        <div class="color-content secondary">
+            <p>Secondary</p>
+            <p>@secondary</p>
+            <p>次要色</p>
+        </div>
+        <div class="color-content black">
+            <p>Black</p>
+            <p>@black</p>
+            <p>黑色</p>
+        </div>
+    </div>
+    <h3 class="header">文字色</h3>
+    <div class="line">
+        <div class="color-content text-white">
+            <p>text-white</p>
+            <p>@text-white</p>
+            <p>白色</p>
+        </div>
+        <div class="color-content text-primary">
+            <p>text-color</p>
+            <p>@text-color</p>
+            <p>主要文字色</p>
+        </div>
+        <div class="color-content text-color">
+            <p>text-color</p>
+            <p>@text-color</p>
+            <p>辅助文字色</p>
+        </div>
+        <div class="color-content text-secondary">
+            <p>text-secondary</p>
+            <p>@text-secondary</p>
+            <p>次要色</p>
+        </div>
+        <div class="color-content text-disabled">
+            <p>text-disabled</p>
+            <p>@text-disabled</p>
+            <p>禁用色</p>
+        </div>
+    </div>
+    <h3>块级元素</h3>
+    <div class="line">
+        <div class="color-content bg-block">
+            <p>bg-block</p>
+            <p>@bg-block</p>
+            <p>block</p>
+        </div>
+        <div class="color-content bg-block-dark">
+            <p>bg-block-dark</p>
+            <p>@bg-block-dark</p>
+            <p>block-dark</p>
+        </div>
+        <div class="color-content bg-white">
+            <p>bg-white</p>
+            <p>@bg-white</p>
+            <p>bg-white</p>
+        </div>
+        <div class="color-content bg-black">
+            <p>bg-black</p>
+            <p>@bg-black</p>
+            <p>bg-black</p>
+        </div>
+    </div>
+    <h3>主题背景色</h3>
+    <div class="line">
+        <div class="color-content bg-primary">
+            <p>bg-primary</p>
+            <p>@bg-primary</p>
+            <p>bg-primary</p>
+        </div>
+        <div class="color-content bg-success">
+            <p>bg-success</p>
+            <p>@bg-success</p>
+            <p>bg-success</p>
+        </div>
+        <div class="color-content bg-warning">
+            <p>bg-warning</p>
+            <p>@bg-warning</p>
+            <p>bg-warning</p>
+        </div>
+        <div class="color-content bg-danger">
+            <p>bg-danger</p>
+            <p>@bg-danger</p>
+            <p>bg-danger</p>
+        </div>
+        <div class="color-content bg-link">
+            <p>bg-link</p>
+            <p>@bg-link</p>
+            <p>bg-link</p>
+        </div>
+        <div class="color-content bg-text">
+            <p>bg-text</p>
+            <p>@bg-text</p>
+            <p>bg-text</p>
+        </div>
+        <div class="color-content bg-secondary">
+            <p>bg-secondary</p>
+            <p>@bg-secondary</p>
+            <p>bg-secondary</p>
+        </div>
+        <div class="color-content bg-disabled">
+            <p>bg-disabled</p>
+            <p>@bg-disabled</p>
+            <p>bg-disabled</p>
+        </div>
+    </div>
+</body>
+</html>
