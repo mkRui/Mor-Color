@@ -1,6 +1,6 @@
 {
   "name": "mor-color",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Mor-ui 颜色包",
   "main": "index.ts",
   "scripts": {
