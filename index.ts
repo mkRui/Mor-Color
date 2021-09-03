@@ -1,5 +1,3 @@
-// export const THEME_TYPES = ['light', 'dark']
-
 export enum THEME_TYPES {
     LIGHT = 'light',
     DARK = 'DARK'
