@@ -3,12 +3,16 @@
   "version": "1.0.3",
   "description": "Mor-ui 颜色包",
   "main": "index.ts",
+  "files": [
+    "lib"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "commit": "git-cz",
+    "commit": "git-cz && yarn run release:patch && git push",
     "release:major": "standard-version -r major -n",
     "release:minor": "standard-version -r minor -n",
     "release:patch": "standard-version -r patch -n",
+    "build:ts": "rm -rf ./dist && tsc -p tsconfig.build.json",
     "commit-log": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0"
   },
   "standard-version": {
