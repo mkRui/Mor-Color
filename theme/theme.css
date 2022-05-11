@@ -1,5 +1,5 @@
 [mor-theme="light"] {
-    --theme-color-primary: #7266ba;
+    --theme-color-primary: #1890ff;
     --theme-color-success: #00b19d;
     --theme-color-warning: #f08300;
     --theme-color-danger: #f5222d;
@@ -40,7 +40,7 @@
 }
 
 [mor-theme="dark"] {
-    --theme-color-primary: #7266ba;
+    --theme-color-primary: #1890ff;
     --theme-color-success: #00b19d;
     --theme-color-warning: #f08300;
     --theme-color-danger: #f5222d;
